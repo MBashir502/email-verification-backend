@@ -7,7 +7,7 @@ const port = process.env.PORT;
 const userRoute = require('./routes/userRoute')
 
 mongoose.connect(process.env.DATABASE_LINK, ()=>{
-    console.log('DB CONNECTED SUCCESSFULLY');
+    console.log('DB Connection');
 })
 app.use(cors())
 app.use(express.json())
